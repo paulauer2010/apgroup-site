@@ -1,0 +1,484 @@
+/* Grundlegende Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header-Bereich */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Anpassung für den Logo-Container */
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Navigationsmenü (Desktop-Ansicht) */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #000;
+}
+
+/* Hauptinhaltsbereich (Desktop & iPad) */
+main {
+    padding: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+/* Startseite (Desktop & iPad) */
+.home-main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+    /* Zentriert den gesamten Textblock innerhalb seines Containers */
+    text-align: center; 
+}
+
+.hero-text h2 {
+    /* WICHTIG: Überschrift jetzt auch zentriert */
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    background-color: transparent !important; /* Stellt sicher, dass kein Hintergrund da ist */
+    padding: 0; /* Stellt sicher, dass kein innerer Abstand den weißen Rahmen erzeugt */
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us {
+    text-align: center;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.about-images img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dienstleistungsseite (Desktop & iPad) */
+.services-main h2 {
+    font-size: 36px;
+}
+
+.service-item {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Kontaktseite (Desktop & iPad) */
+.contact-main {
+    text-align: center;
+}
+
+.contact-main p {
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer-Bereich */
+/* Footer-Bereich */
+footer {
+    display: flex;
+    justify-content: space-between; /* Verteilt die 3 Elemente (die wir gleich erstellen) */
+    align-items: center;
+    padding: 20px 50px; 
+    background-color: #f0f0f0;
+    color: #666;
+    margin-top: 50px;
+}
+
+/* WICHTIG: Erzeugt eine leere linke Spalte, um den Copyright-Text zu zentrieren */
+.footer-placeholder {
+    width: 30px; /* Breite des Logos, um eine Balance zu schaffen */
+}
+
+/* Footer Logo Styling (bleibt gleich) */
+.footer-logo {
+    height: 30px; 
+    width: auto;
+    transition: opacity 0.3s ease; 
+}
+
+.footer-logo:hover {
+    opacity: 0.7;
+}
+
+/* Animation für das sanfte Einblenden von Elementen */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.is-visible {
+    animation-name: fade-in-up;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+/* Burger Menü */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.main-nav {
+    display: flex;
+}
+
+/* ======================================= */
+/* RESPONSIVE DESIGN FÜR HANDYS (max. 600px) */
+/* ======================================= */
+@media (max-width: 600px) {
+    /* WICHTIG: Hauptinhalte zentrieren */
+    main {
+        text-align: center;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    /* Header-Bereich anpassen */
+    header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        flex-direction: row;
+    }
+
+    .logo {
+        flex-grow: 1;
+    }
+
+    /* Burger Menü anzeigen */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Menü-Container (Dropdown) */
+    .main-nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        transform: translateY(-150%);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    /* Menü aufklappen, wenn es die Klasse 'active' hat */
+    .main-nav.active {
+        transform: translateY(0);
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    /* Inhalt anpassen und zentrieren */
+    .hero {
+        flex-direction: column;
+        align-items: center; /* Bilder und Flex-Elemente zentrieren */
+    }
+
+    .hero-text {
+        text-align: center; /* Stellt sicher, dass der gesamte Textcontainer zentriert bleibt */
+    }
+
+    .hero-text h2, .hero-text p {
+        text-align: center; /* Text im Hero-Bereich zentrieren */
+    }
+
+    .hero-text h2 {
+        font-size: 32px;
+    }
+    
+    .hero-image {
+        text-align: center;
+    }
+
+    .about-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-images img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Formular anpassen */
+    form {
+        padding: 15px;
+        text-align: left;
+    }
+    
+    .form-group input, .form-group textarea {
+        padding: 8px;
+    }
+}
+
+
+/* ======================================= */
+/* DARK MODE IMPLEMENTIERUNG (Automatisch) */
+/* ======================================= */
+
+@media (prefers-color-scheme: dark) {
+    /* GRUNDFARBEN */
+    body {
+        background-color: #121212 !important; 
+        color: #e0e0e0 !important;             
+    }
+
+    /* HEADER UND FOOTER SIND DUNKEL */
+    header {
+        background-color: #1f1f1f !important; 
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1) !important;
+    }
+    footer {
+        background-color: #1f1f1f !important;
+        color: #aaaaaa !important;
+    }
+
+    /* WICHTIG: ÜBERSCHRIFTEN HELL MACHEN */
+    h2, h3 {
+        color: #e0e0e0 !important;
+    }
+
+    /* Logo Invertierung für Dark Mode */
+    .header-logo {
+        filter: invert(1) hue-rotate(180deg) !important;
+    }
+    
+    /* Logo-Text und Navigation (Header) */
+    .logo h1 {
+        color: #e0e0e0 !important;
+    }
+
+    /* NAVIGATION LINKS UND TEXT (DESKTOP) */
+    nav a {
+        color: #bbbbbb !important;
+    }
+    nav a:hover, nav a.active {
+        color: #ffffff !important;
+    }
+
+    /* Burger Menü Linien (Hell) */
+    .menu-toggle .bar {
+        background-color: #e0e0e0 !important;
+    }
+
+    /* ========================================================== */
+    /* ULTRA FIX: MOBILES MENÜ WIRD DUNKEL MIT WEISSER SCHRIFT */
+    /* ========================================================== */
+    
+    /* Dropdown-Hintergrund (Dunkel), WICHTIG: OHNE !important */
+    .main-nav {
+        background-color: #1f1f1f; /* KEIN !important */
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* KEIN !important */
+    }
+    
+    /* Textfarbe der Dropdown-Links (Hell) */
+    .main-nav a {
+        color: #e0e0e0 !important; /* Helle Textfarbe auf jeden Fall erzwingen */
+        background-color: transparent !important; /* Jeglichen Link-Hintergrund entfernen */
+        padding: 10px 0 !important; /* Fix, falls Padding zu hellen Linien führte */
+    }
+
+    /* Formular-Regeln, bleiben unverändert, da sie funktionierten */
+    form {
+        background-color: #2c2c2c !important;
+        border: 1px solid #444 !important;
+    }
+    .form-group input, .form-group textarea {
+        background-color: #333 !important;
+        border: 1px solid #555 !important;
+        color: #e0e0e0 !important;
+    }
+    button[type="submit"] {
+        background-color: #0088cc !important;
+    }
+    button[type="submit"]:hover {
+        background-color: #00aaff !important;
+    }
+}
