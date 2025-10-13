@@ -113,8 +113,8 @@ h2 {
 .hero-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Abgerundete Ecken */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Dezenter Schatten */
 }
 
 .about-us {
@@ -435,6 +435,12 @@ footer {
         color: #e0e0e0 !important;
     }
 
+        /* FIX: Stellt sicher, dass das Hero-Bild auch im Dark Mode abgerundete Ecken und Schatten hat UND die Farbe invertiert */
+    .hero-image img.header-logo { /* Wichtig: Hier die Klasse .header-logo verwenden */
+        filter: invert(1) hue-rotate(180deg) !important; /* Invertiert die Farbe für Dark Mode */
+        border-radius: 15px !important; 
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1) !important; /* Hellerer Schatten für Dark Mode */
+    }
     /* NAVIGATION LINKS UND TEXT (DESKTOP) */
     nav a {
         color: #bbbbbb !important;
